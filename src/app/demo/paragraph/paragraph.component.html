@@ -1,0 +1,26 @@
+<p>Componente 2</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+            <th>Avatar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let item of records">
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.first_name}}</td>
+                <td>{{item.last_name}}</td>
+                <td>{{item.email}}</td>
+                <td>
+                    <img [src]="item.avatar" alt="avatar" />
+                </td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>
