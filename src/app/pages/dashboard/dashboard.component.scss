@@ -1,0 +1,81 @@
+.dashboard {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    aside {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 175px;
+        background-color: #c60b1e;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img{
+            display: block;
+            margin: 0px auto;
+        }
+        .user{
+            padding-top: 1rem;
+            text-align: center;
+            color: #FFF;
+            i{
+                font-size: 32px;
+            }
+        }
+        ul{
+            list-style: none;
+            padding-left: 0;
+            li {
+                a{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 0 1em;
+                    padding: 1em;
+                    text-decoration: none;
+                    color: #FFF;
+                    transition: all 250ms linear;
+                    font-size: 12px;
+                    &:hover,
+                    &.active{
+                        color: #c60b1e;
+                        background-color: #FFF;
+                    }
+                    i{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        margin-left: 175px;
+        padding: 1rem 1.5rem;
+        overflow-y: auto;
+        height: 100vh;
+    }
+    button{
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0 0.5em;
+        font-weight: bold;
+        border: 1px solid #FFF;
+        background-color: #c60b1e;
+        padding: 0.375rem 0.75rem;
+        color: #FFF;
+        cursor: pointer;
+        transition: background-color 250ms linear;
+        margin: 0 auto 1em;
+        &:hover{
+            background-color: #ba0a1b;
+        }
+        &:focus,
+        &:focus-visible{
+            outline: 0;
+        }
+    }
+}

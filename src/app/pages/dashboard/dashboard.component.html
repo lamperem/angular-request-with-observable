@@ -1,0 +1,26 @@
+<!-- <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "ball-scale-multiple" [fullScreen] = "true"><p style="color: white" >Cargando...</p></ngx-spinner> -->
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>
+
+<div class="dashboard">
+    <aside>
+        <nav>
+            <img src="./assets/images/logo.png" alt="Logo" width="100">
+            <div class="user">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>
+                    <small>Bienvenido</small>
+                </p>
+            </div>
+            <ul>
+                <li><a routerLink="/home" routerLinkActive="active"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+                <li><a routerLink="/demo" routerLinkActive="active"><i class="fa-solid fa-person-walking-arrow-right"></i> <span>Demo</span></a></li>
+            </ul>
+        </nav>
+        <footer>
+            <button type="button" class="button" (click)="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> <span>Salir</span></button>
+        </footer>
+    </aside>
+    <main>
+        <ng-content></ng-content>
+    </main>
+</div>
